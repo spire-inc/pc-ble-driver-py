@@ -1,12 +1,4 @@
-python/**/*.dll
 python/**/*.pyd
-python/**/*.so
-python/**/*.dylib
 python/**/*.pyc
-python/**/*.hex
-python/**/hex/**/*.sh
-python/**/*.patch
-python/**/*.txt
-python/**/lib/**/*.py
 python/dist/**
 python/*.egg-info/**
