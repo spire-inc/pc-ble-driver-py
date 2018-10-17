@@ -1,26 +1,29 @@
 Build information:
 
-* System: Darwin-13.4.0
-* Hostname: araa.nvlsi.no
-* Timestamp: 2018-09-10 12:16:42 (YY-MM-DD HH:MM:SS, UTC)
+* System: Darwin-17.7.0
+* Hostname: MacBook-Pro-3.hq.spire.io
+* Timestamp: 2018-10-16 23:08:54 (YY-MM-DD HH:MM:SS, UTC)
 * Generator: Unix Makefiles
-* Build type: RelWithDebInfo
+* Build type: 
 * C Compiler: AppleClang (64-bit)
 * C++ Compiler: AppleClang (64-bit)
-* CMake version: 3.6.2
-* Boost version: 1.61.0
+* CMake version: 3.12.0
+* Boost version: 1.67.0
 * Boost libs: /usr/local/lib
 * SD API Versions: <SD_API_V2> <SD_API_V3>
-* SWIG version: 2.0.12
-* Pyhon version: 2.7.5
-* Pyhon libs: /usr/lib/libpython2.7.dylib
+* SWIG version: 3.0.12
+* Pyhon version: 3.7.0
+* Pyhon libs: /usr/local/Frameworks/Python.framework/Versions/3.7/lib/libpython3.7m.dylib
 * Git repo: pc-ble-driver-py
-** Git revision: c32f7ed57ec26cae808ddaf1a3560a8a6b936d6f
-** Git branch: release/0.11.4
+** Git revision: 62a5a09e6617b3d0a9c6ebcad2d8ecb5e082994f
+** Git branch: py3
 * Git repo: pc-ble-driver
 ** Git revision: 2d97262fa9940cb815778f01af9d05093558a72c
 ** Git branch: HEAD
 * MD5 sums: 
-** e64f2849fcff2192f719566728608c42  pc_ble_driver_sd_api_v2.py
-** 8d49658f06fc30a3d0485cdb9a369a0d  _pc_ble_driver_sd_api_v2.so
-** 8bfa923c16dae83d8218fbe4bf107ea5  libpc_ble_driver_shared_sd_api_v2.dylib
+** 6a075fbe3a3f93b3f2eb824a8732d39b  pc_ble_driver_sd_api_v2.py
+** c55e2d92925409ecc6283a211ca2c4c0  _pc_ble_driver_sd_api_v2.so
+** 96519d6de76033a36edd659c57fa7897  libpc_ble_driver_shared_sd_api_v2.dylib
+** 2d60e4764f6e6206fa1986159e43fcb4  pc_ble_driver_sd_api_v3.py
+** c788772407cd49548b33d84237b77c35  _pc_ble_driver_sd_api_v3.so
+** e20a095bfc644c7efb8a17a2970e2df9  libpc_ble_driver_shared_sd_api_v3.dylib
