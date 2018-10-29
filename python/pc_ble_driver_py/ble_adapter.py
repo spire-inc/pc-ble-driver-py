@@ -529,6 +529,7 @@ class BLEAdapter(BLEDriverObserver):
                 obs.on_notification(ble_adapter = self,
                                     conn_handle = conn_handle,
                                     uuid        = uuid,
+                                    attr_handle = attr_handle,
                                     data        = data)
 
         elif hvx_type == BLEGattHVXType.indication:

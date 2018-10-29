@@ -156,7 +156,7 @@ class BLEAdapterObserver(object):
         pass
 
 
-    def on_notification(self, ble_adapter, conn_handle, uuid, data):
+    def on_notification(self, ble_adapter, conn_handle, uuid, attr_handle, data):
         pass
 
 
