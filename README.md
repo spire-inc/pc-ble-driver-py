@@ -18,27 +18,40 @@ You can find additional information here:
 
 See the [license file](LICENSE) for details.
 
-## Installing for Spire Purposes
+## Installing for Spire purposes
 
-Install requirements-dev.txt
-
-```
-pip install -r requirements-dev.txt
-```
-
-For linux:
+Install requirements:
 
 ```
-CMAKE_PREFIX_PATH=./ble_libs/nrf-ble-driver-4.1.0-macos_x86_64 python3 setup.py install
+pip3 install -r requirements-dev.txt
+
+# Linux only
+sudo apt install swig libudev-dev
 ```
 
-For OSX:
+For Linux:
 
-```
-CXXFLAGS=-stdlib=libc++ CMAKE_PREFIX_PATH=./ble_libs/nrf-ble-driver-4.1.0-macos_x86_64 python3 setup.py install
-```
+    CMAKE_PREFIX_PATH=$(pwd)/ble_libs/nrf-ble-driver-4.1.0-linux_x86_64 python3 setup.py install
 
-In order to create a .whl file, use bdist_wheel instead of install.
+For macOS:
+
+    CXXFLAGS=-stdlib=libc++ CMAKE_PREFIX_PATH=$(pwd)/ble_libs/nrf-ble-driver-4.1.0-macos_x86_64 python3 setup.py install
+
+In order to create a .whl file, use `bdist_wheel` instead of `install`.
+
+### Flashing the firmware
+
+Install `nrfutil` (Python 2 only):
+
+    pip2 install nrfutil
+
+Flash the firmware on Linux:
+
+    sudo nrfutil dfu usb-serial -pkg ble_libs/nrf-ble-driver-4.1.0-linux_x86_64/share/nrf-ble-driver/hex/sd_api_v5/connectivity_4.1.0_usb_with_s132_5.1.0_dfu_pkg.zip -p /dev/ttyACM0
+
+Flash the firmware on macOS:
+
+    nrfutil dfu usb-serial -pkg ble_libs/nrf-ble-driver-4.1.0-macos_x86_64/share/nrf-ble-driver/hex/sd_api_v5/connectivity_4.1.0_usb_with_s132_5.1.0_dfu_pkg.zip -p /dev/tty.usbserial-XXXXXXXX
 
 ## Installing from PyPI
 
