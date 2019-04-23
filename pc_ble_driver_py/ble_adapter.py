@@ -781,6 +781,7 @@ class BLEAdapter(BLEDriverObserver):
                 obs.on_notification(
                     ble_adapter=self,
                     conn_handle=conn_handle,
+                    attr_handle=attr_handle,
                     uuid=uuid,
                     data=data,
                 )
