@@ -18,6 +18,28 @@ You can find additional information here:
 
 See the [license file](LICENSE) for details.
 
+## Installing for Spire Purposes
+
+Install requirements-dev.txt
+
+```
+pip install -r requirements-dev.txt
+```
+
+For linux:
+
+```
+CMAKE_PREFIX_PATH=./ble_libs/nrf-ble-driver-4.1.0-macos_x86_64 python3 setup.py install
+```
+
+For OSX:
+
+```
+CXXFLAGS=-stdlib=libc++ CMAKE_PREFIX_PATH=./ble_libs/nrf-ble-driver-4.1.0-macos_x86_64 python3 setup.py install
+```
+
+In order to create a .whl file, use bdist_wheel instead of install.
+
 ## Installing from PyPI
 
 To install the latest published version from the Python Package Index simply type:
