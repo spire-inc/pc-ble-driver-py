@@ -151,7 +151,7 @@ class HRCollector(BLEDriverObserver, BLEAdapterObserver):
         if dev_name == TARGET_DEV_NAME:
             self.adapter.connect(peer_addr, tag=CFG_TAG)
 
-    def on_notification(self, ble_adapter, conn_handle, uuid, data):
+    def on_notification(self, ble_adapter, conn_handle, attr_handle, uuid, data):
         if len(data) > 32:
             data = "({}...)".format(data[0:10])
         print("Connection: {}, {} = {}".format(conn_handle, uuid, data))
