@@ -13,6 +13,29 @@ The Python bindings require that the development kit you use is programmed with 
 
 See the [license file](LICENSE) for details.
 
+## Installing for Spire purposes
+
+Install requirements:
+
+    pip3 install -r requirements-dev.txt
+    
+    # Linux only
+    sudo apt install swig libudev-dev
+
+Download [`pc-ble-driver` 4.1.1](https://github.com/NordicSemiconductor/pc-ble-driver/releases/tag/v4.1.1) for your platform and extract the archive.
+
+For Linux:
+
+    CMAKE_PREFIX_PATH=/path/to/nrf-ble-driver-4.1.1-linux_x86_64 python3 setup.py install
+
+For macOS:
+
+    CXXFLAGS=-stdlib=libc++ CMAKE_PREFIX_PATH=/path/to/nrf-ble-driver-4.1.1-macos_x86_64 python3 setup.py install
+
+In order to create a .whl file, use `bdist_wheel` instead of `install`.
+
+See the [license file](LICENSE) for details.
+
 ## Installing from PyPI
 
 To install the latest published version from the Python Package Index simply type:
